@@ -17,6 +17,7 @@ public class Calculator : MonoBehaviour {
 		ResetAll ();
 	}
 
+	//Reset fields and member variables
 	private void ResetAll(){
 		ClearField();
 		_x = 0.0f;
@@ -31,6 +32,7 @@ public class Calculator : MonoBehaviour {
 			ResetAll();
 		}
 
+		//Handles button input values
 		switch (s) {
 				case "+":
 				case "-":
