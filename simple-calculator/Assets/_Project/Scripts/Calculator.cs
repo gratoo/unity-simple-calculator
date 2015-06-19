@@ -81,9 +81,9 @@ public class Calculator : MonoBehaviour {
 			ClearField();
 			_input.text = CalculatePair(_x, _y, _op).ToString();
 		} else {
-			_op = s;
 			_x = Convert.ToSingle(CalculatePair(_x, _y, _op));
 			_result.text = _x.ToString() + " " + s;
+			_op = s;
 			_input.text = "0";
 		}
 	}
